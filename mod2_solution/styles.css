@@ -1,48 +1,88 @@
-body{
-	
-}
-h1{
-	text-align: center;
-}
-p{
-	border-style: solid;
-	box-sizing: border-box;
-	margin: 10px;
-	padding: 10px;
-}
-#container{
-	position: relative;
-}
-#p1{
-	background-color: green;
-}
-#p2{
-	background-color: grey;
-}
-#p3{
-	background-color: orange;
-}
-/********** Desktop View only **********/
-@media (min-width: 992px){
-	#p1{
-		width:300px;
-		height: 220px
+<style>
+    * {
+      box-sizing: border-box;
+    }
 
-	}
-}
+/* Heading */
 
-/********** Tablet View only **********/
+    h1 {
+      font-family: 'Tangerine', cursive;
+      font-size: 50px;
+      text-shadow: 4px 4px 4px #aaa;
+      text-align: center;
+      margin-top: 90px;
+      margin-bottom: 60px;
+    }
 
-@media (min-width: 768px) and (max-width: 991px){
-	#p1{
-		width:50%;
+/* Menu boxes (section) and sub headings (item)*/
 
-	}
-}
+    section {
+      float: left;
+      background-color: #FFEFD5;
+      border: 1px solid black;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .item {
+      margin-top: 0px;
+      width: 35%;
+      height:40px;
+      font-family: 'Tangerine', cursive;
+      color: white;
+      font-size: 35px;
+      /*padding: 1px;*/
+      text-align: center;
+      border-left: 1px solid black;
+      border-bottom: 1px solid black;
+      position: relative;
+      left: 64.75%;
+    }
 
-/********** Mobile View only **********/
-@media  (max-width: 767px){
-	#p1{
-		width: 40%;
-	}
-}
+/* Sub-heading background color*/
+
+    .chicken {
+      background-color: #BDB76B;
+    }
+    .beef {
+      background-color: crimson;
+    }
+    .sushi {
+      background-color: #00BFFF; 
+    }
+
+/* Text inside boxes */
+
+    p {
+      font-family: 'IBM Plex Sans', sans-serif;
+	    font-size: 20px;
+      padding:15px;
+      text-align: justify;
+    }
+
+ /* Media queries*/   
+
+    @media (min-width: 992px) {
+    	section {
+    		margin-left: 2.5%;
+      		width: 30%;
+    	}  
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+    	.menu-chicken, .menu-beef {
+    		margin-left: 3%;
+      		width: 45.5%;
+    	}     
+    	.menu-sushi {
+    		width: 91%;
+    		margin-left: 4.5%;
+    	}  
+    }
+    @media (max-width: 768px) {
+     	.menu {
+    		margin-left: 5%;
+      		width: 45%;
+      		/*margin-bottom: 30px;*/
+    	}      
+    }
+
+  </style>
