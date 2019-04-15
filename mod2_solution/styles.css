@@ -1,0 +1,48 @@
+body{
+	
+}
+h1{
+	text-align: center;
+}
+p{
+	border-style: solid;
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 10px;
+}
+#container{
+	position: relative;
+}
+#p1{
+	background-color: green;
+}
+#p2{
+	background-color: grey;
+}
+#p3{
+	background-color: orange;
+}
+/********** Desktop View only **********/
+@media (min-width: 992px){
+	#p1{
+		width:300px;
+		height: 220px
+
+	}
+}
+
+/********** Tablet View only **********/
+
+@media (min-width: 768px) and (max-width: 991px){
+	#p1{
+		width:50%;
+
+	}
+}
+
+/********** Mobile View only **********/
+@media  (max-width: 767px){
+	#p1{
+		width: 40%;
+	}
+}
