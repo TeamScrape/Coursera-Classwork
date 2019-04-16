@@ -14,6 +14,7 @@
 
     .chicken {
       background-color: #0066ff;
+
     }
     .beef {
       background-color: #990000;
@@ -32,15 +33,16 @@
     .item {
      font-family: 'Comic Sans MS', sans-serif;
       margin-top: 0px;
-      width: 35%;
-      height:50px; 
+      width: 200px;
+      height:60px; 
       color: orange;
       font-size: 35px;
       text-align: center;
-      border-left: 1px solid black;
-      border-bottom: 1px solid black;
+      border: 1px solid black;
       position: relative;
-      left: 64.75%;
+      top:0px;
+      left:40%;
+      
     }
 
 
@@ -62,14 +64,14 @@
       		width: 30%;
     	}  
     }
-    @media (max-width: 991px) and (min-width: 768px) {
+    @media (min-width: 768px)  and (max-width: 991px)  {
     	.menu-chicken, .menu-beef {
     		margin-left: 3%;
-      		width: 45.5%;
+      		width: 50%;
     	}     
     	.menu-sushi {
     		width: 91%;
-    		margin-left: 4.5%;
+    		margin: 20px;
     	}  
     }
     @media (max-width: 768px) {
